@@ -265,7 +265,7 @@ sudo apt update
 
 #instalação dos software base do Linux Mint 20.x, 21.x e 22.x
 #opção da contra barra (\): criar uma quebra de linha no terminal
-sudo apt install software-properties-common build-essential lsb-core dkms lsb-release \
+sudo apt install software-properties-common build-essential lsb-base dkms lsb-release \
 apt-transport-https module-assistant
 
 #instalação dos software de hardware e monitoramento do Linux Mint 20.x, 21.x e 22.x
@@ -292,9 +292,9 @@ sudo apt update
 sudo apt install vainfo intel-gpu-tools mesa-opencl-icd mesa-utils-extra
 
 #instalação dos drivers e recursos do Mesa
-sudo apt install libegl1-mesa libgl1-mesa-glx libgles2-mesa libassimp5
-
+sudo apt install libgl1-mesa-dev libgles2-mesa-dev libassimp5 libgles2-mesa-dev
 #Reinicializar o Sistema
+
 sudo reboot
 
 #Instalação do Driver de Vídeo da Radeon (DESATIVADO - NÃO UTILIZAR ESSE PROCEDIMENTO,
